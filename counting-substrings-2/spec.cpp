@@ -25,8 +25,8 @@ protected:
     }
 
     void GradingConfig() {
-        TimeLimit(1);
-        MemoryLimit(128);
+        TimeLimit(1.5);
+        MemoryLimit(256);
     }
 
     void Constraints() {
