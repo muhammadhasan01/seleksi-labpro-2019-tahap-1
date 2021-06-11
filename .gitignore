@@ -36,3 +36,6 @@ runner
 solution
 alt-solution
 tc/
+
+# Misc
+.vscode/
