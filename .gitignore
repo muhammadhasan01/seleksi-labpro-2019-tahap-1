@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Testcases
+runner
+solution
+alt-solution
+tc/
