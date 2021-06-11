@@ -59,7 +59,6 @@ protected:
     }
     void BeforeTestCase() {
         S.clear();
-        
     }
 
     void TestCases() {
