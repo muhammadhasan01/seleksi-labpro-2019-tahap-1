@@ -103,7 +103,7 @@ int main() {
             cout << 0 << '\n';
             continue;
         }
-        l = 0, r = n - 1;
+        l = left_part, r = n - 1;
         while (l <= r) {
             int mid = (l + r) >> 1;
             if (can(mid, 1)) {
