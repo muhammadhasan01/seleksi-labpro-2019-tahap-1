@@ -19,7 +19,7 @@ int main () {
     int a[n+5];
     for (int i = 1; i <= n; i++) cin >> a[i];
     sort(a+1,a+n+1);
-    int ans = 0;
+    LL ans = 0;
     for (int i = 1; i <= n; i++) {
         if (a[i] >= r) break;    // a[i]+a[j] pasti > r
         int minj = l - a[i], maxj = r - a[i];   // cari jumlah bilangan yang diantara minj dan maxj
