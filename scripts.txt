@@ -1,0 +1,3 @@
+bash generate-problem.sh anagram banyak-anagram "Banyak Anagram" 2 256 problems
+bash generate-problem.sh MS-3 counting-substrings-3 "Mencari Substring - Versi III" 2 256 problems
+bash generate-problem.sh MDS-2 subsegment-median-2 "Median di Subsegment II" 2 256 problems
