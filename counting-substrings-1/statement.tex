@@ -1,0 +1,102 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx, eso-pic}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\lhead{Seleksi Tahap 1 Laboratorium Pemrograman 2019}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+\lfoot{Seleksi Tahap 1 Labpro 2019}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Mencari Substring - Versi I} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 1s \\    % jangan lupa ganti time limit
+        Batas Memori & 128MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \textbf{Perbedaan antara versi hanya pada batasan saja.}
+\end{center}
+
+\subsection*{Deskripsi}
+
+Diberikan string $S$ dan $Q$ query, setiap query berisi string $P$. Anda disuruh mencari banyaknya \href{https://en.wikipedia.org/wiki/Substring}{substring} $S$ yang sama dengan $P$.
+
+\subsection*{Format Masukan}
+Baris Pertama, berisi satu buah string $S$.
+
+Baris kedua, berisi satu bilangan bulat $Q$, menyatakan banyaknya query.
+
+Setiap query berisi satu buah string $P$.
+
+\subsection*{Format Keluaran}
+Untuk setiap query, keluarkan satu bilangan bulat berupa jawaban dari query tersebut.
+
+\subsection*{Batasan Input}
+
+\begin{itemize}
+    \item{$1 \leq |S| \leq 10^2$, $S$ hanya berisi karakter \textit{lowercase english letters}}
+    \item{$1 \leq Q \leq 10^2$}
+    \item{$1 \leq |P| \leq |S| \leq 10^2$, $P$ hanya berisi karakter \textit{lowercase english letters}}
+\end{itemize}
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+dododoraemon
+4
+do
+dodo
+dora
+o
+
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+3
+2
+1
+4
+
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\end{document}

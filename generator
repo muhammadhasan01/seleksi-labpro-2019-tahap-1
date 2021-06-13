@@ -1,0 +1,15 @@
+bash generate-problem.sh BA banyak-anagram "Banyak Anagram" 2 256 Final
+bash generate-problem.sh MS1 counting-substrings-1 "Mencari Substring - Versi I" 1 128 Final
+bash generate-problem.sh MS2 counting-substrings-2 "Mencari Substring - Versi II" 1.5 256 Final
+bash generate-problem.sh MS3 counting-substrings-3 "Mencari Substring - Versi III" 2 512 Final
+bash generate-problem.sh BD1 jumlah-domain-1 "Banyak Domain 1" 1 256 Final
+bash generate-problem.sh BD2 jumlah-domain-2 "Banyak Domain 2" 1 256 Final
+bash generate-problem.sh MYT mencari-subsequence-terpanjang "Mencari yang Terpanjang" 1 256 Final
+bash generate-problem.sh MTP mencari-tempat-perkumpulan "Mencari Tempat Perkumpulan" 1 128 Final
+bash generate-problem.sh MD mengambil-dorayaki "Mengambil Dorayaki" 1 128 Final
+bash generate-problem.sh MN merekap-nilai "Merekap Nilai" 2 128 Final
+bash generate-problem.sh JT minimum-subarray-sum "Jumlah Terkecil" 1 128 Final
+bash generate-problem.sh PP1 pencari-pasangan-1 "Pencari Pasangan - Versi I" 1 64 Final
+bash generate-problem.sh PP2 pencari-pasangan-2 "Pencari Pasangan - Versi II" 1 64 Final
+bash generate-problem.sh MDS1 subsegment-median-1 "Median di Subsegment 1" 2 256 Final
+bash generate-problem.sh MDS2 subsegment-median-2 "Median di Subsegment 2" 2 256 Final

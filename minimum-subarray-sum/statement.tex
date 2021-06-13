@@ -1,0 +1,91 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx, eso-pic}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\lhead{Seleksi Tahap 1 Laboratorium Pemrograman 2019}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+\lfoot{Seleksi Tahap 1 Labpro 2019}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Jumlah Terkecil} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 1s \\    % jangan lupa ganti time limit
+        Batas Memori & 128MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+
+Diberikan $N$ buah bilangan $A_1, A_2,\dots, A_N$ pada sebuah array. Carilah \href{https://en.wiktionary.org/wiki/subarray}{subarray} (berisi minimal satu elemen) yang memiliki jumlah paling minimal dan keluarkan jumlahnya.
+
+\subsection*{Format Masukan}
+Baris Pertama, berisi satu buah bilangan bulat $N$, mengatakan banyak bilangan pada array.
+
+Baris Kedua, berisi $N$ buah bilangan bulat, $A_1,\dots, A_N$, yang merupakan isi dari array dan dipisahkan spasi.
+
+\subsection*{Format Keluaran}
+Keluarkan sebuah bilangan bulat yang menyatakan jumlah minimal dari subarray yang ada.
+
+\subsection*{Batasan Input}
+
+\begin{itemize}
+    \item{$1 \leq N \leq 10^5$}
+    \item{$-10^9 \leq A_i \leq 10^9$}
+\end{itemize}
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+5
+1 -5 4 -6 10
+
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+-7
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\subsection*{Penjelasan}
+
+Subarray minimum ada pada rentang elemen 2 sampai 4, yakni [1, \textbf{-5, 4, -6}, 10].
+
+\end{document}

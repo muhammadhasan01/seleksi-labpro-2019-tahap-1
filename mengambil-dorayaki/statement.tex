@@ -1,0 +1,96 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx, eso-pic}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\lhead{Seleksi Tahap 1 Laboratorium Pemrograman 2019}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+\lfoot{Seleksi Tahap 1 Labpro 2019}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Mengambil Dorayaki} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 1s \\    % jangan lupa ganti time limit
+        Batas Memori & 128MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+
+Doraemon mempunyai kantong dengan kapasitas $K$. Terdapat $N$ dorayaki bersebaran yang dia temukan, dengan setiap dorayaki ke-$i$ memiliki harga $P_i$ dan berat $W_i$. Carilah maksimal harga dorayaki total yang dapat diambil tanpa melebihi batas kapasitas kantong Doraemon.
+
+\subsection*{Format Masukan}
+Baris pertama, berisi 2 bilangan bulat $N$, $K$.
+
+$N$ baris berikutnya, berisi 2 bilangan bulat $P_i$ dan $W_i$, yang menyatakan harga dan berat dorayaki ke-$i$.
+
+\subsection*{Format Keluaran}
+Keluarkan satu baris berupa satu bilangan bulat yang merupakan jawaban dari soal.
+
+\subsection*{Batasan Input}
+
+\begin{itemize}
+    \item{$1 \leq N, K \leq 10^3$}
+    \item{$1 \leq P_i \leq 10^9$}
+    \item{$1 \leq W_i \leq 10^3$}
+\end{itemize}
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+5 10
+2 3
+10 6
+8 4
+3 2
+6 2
+
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+19
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\subsection*{Penjelasan}
+
+Cara optimal adalah dengan mengambil dorayaki ke-2, ke-4, dan ke-5.
+
+\end{document}

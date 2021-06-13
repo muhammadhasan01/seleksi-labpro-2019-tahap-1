@@ -1,0 +1,117 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx, eso-pic}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\pagestyle{fancy}
+\fancyhf{}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\lhead{Seleksi Tahap 1 Laboratorium Pemrograman 2019}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+\lfoot{Seleksi Tahap 1 Labpro 2019}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Banyak Domain 2} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 1s \\    % jangan lupa ganti time limit
+        Batas Memori & 256MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \textbf{Perbedaan antara versi hanya pada batasan saja.}
+\end{center}
+
+\subsection*{Deskripsi}
+
+Diberikan $N$ buah domain/area, $(L_1, R_1), (L_2, R_2), …, (L_N, R_N)$, berupa representasi range dari domain. Dan diberikan $Q$ query dengan pada setiap query diberikan sebuah bilangan $A$.
+Pada setiap query, hitunglah banyak domain dimana bilangan tersebut berada.
+
+Bilangan $A$ akan berada di suatu domain $(L, R)$ jika dan hanya jika dipenuhi $L \leq A \leq R$.
+
+\subsection*{Format Masukan}
+\begin{itemize}
+\item{Baris Pertama, berisi satu bilangan bulat $N$, menyatakan banyak domain yang ada.}
+
+\item{$N$ baris berikutnya, pada masing-masing baris berisi domain ke-$i$ yang terdiri dari dua bilangan bulat $L_i$ dan $R_i$.}
+
+\item{Baris berikutnya, berisi satu bilangan bulat $Q$, menyatakan banyak query.}
+
+\item{$Q$ baris berikutnya, pada masing-masing baris berisi query ke-$i$ berupa satu bilangan bulat $A_i$.}
+
+\end{itemize}
+
+\subsection*{Format Keluaran}
+Keluarkan $Q$ baris, pada baris ke-$i$ terdapat satu bilangan bulat berupa banyak domain dimana query ke-$i$ berada.
+
+\subsection*{Batasan Input}
+
+\begin{itemize}
+    \item{$1 \leq N \leq 10^5$}
+    \item{$1 \leq L_i \leq R_i \leq 10^9$}
+    \item{$1 \leq Q \leq 10^5$}
+    \item{$1 \leq A_i \leq 10^9$}
+\end{itemize}
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+2
+1 10
+6 20
+3
+2
+7
+19
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+1
+2
+1
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\subsection*{Penjelasan}
+
+-
+
+\end{document}

@@ -1,0 +1,99 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx, eso-pic}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\lhead{Seleksi Tahap 1 Laboratorium Pemrograman 2019}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+\lfoot{Seleksi Tahap 1 Labpro 2019}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Merekap Nilai} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 2s \\    % jangan lupa ganti time limit
+        Batas Memori & 128MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+
+Diberikan $N$ list data yang berisi Nama orang dan Nilai orang tersebut di ujian labpro. Setelah dicek ternyata terdapat beberapa nama duplikat, Anda disuruh memperbaiki ini dengan mengeluarkan list baru yang tidak ada duplikat nama dengan menjumlahkan nilai yang namanya sama. Keluarkan list baru ini juga dengan terurut berdasarkan nama abjad.
+
+\subsection*{Format Masukan}
+Baris Pertama berisi satu bilangan bulat $N$, menyatakan banyaknya list data
+
+$N$ baris berikutnya, berisi satu buah string $S_i$ dan satu bilangan bulat $X_i$, masing-masing menyatakan nama orang dan nilai orang tersebut.
+
+
+\subsection*{Format Keluaran}
+Baris pertama keluarkan bilangan bulat $L$, berupa jumlah data baru.
+
+$L$ baris berikutnya, keluarkan nama dan nilai dari setiap orang dari data baru.
+
+\subsection*{Batasan Input}
+
+\begin{itemize}
+    \item{$1 \leq N \leq 10^5$}
+    \item{$1 \leq |S| \leq 10^2$, $S$ hanya berisi karakter alfabet \textit{lowercase}}
+    \item{$1 \leq X \leq 10^9$}
+\end{itemize}
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+5
+doraemon 99
+nobita 0
+doraemon 10
+nobita 5
+shizuka 100
+
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+3
+doraemon 109
+nobita 5
+shizuka 100
+
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\end{document}
