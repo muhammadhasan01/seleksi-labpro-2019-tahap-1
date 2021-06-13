@@ -39,3 +39,5 @@ tc/
 
 # Misc
 .vscode/
+*.aux
+*.log
