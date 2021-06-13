@@ -7,7 +7,7 @@ using ll = long long;
 class ProblemSpec : public BaseProblemSpec {
 protected:
     const int NMAX = 1e4;
-    const int QMAX = 1e5;
+    const int QMAX = 2e4;
     const int AMAX = 1e9;
 
     int N, Q;

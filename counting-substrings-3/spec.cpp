@@ -5,8 +5,8 @@ using namespace std;
 
 class ProblemSpec : public BaseProblemSpec {
 protected:
-    const int SMAX = 1e6;
-    const int QMAX = 1e3;
+    const int SMAX = 3e5;
+    const int QMAX = 5e3;
     const int PMAX = 3e2;
 
     string S;
